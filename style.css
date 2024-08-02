@@ -1,0 +1,143 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --white: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  --Font-family: "Red Hat Display", sans-serif;
+  --Font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: var(--Pale-blue);
+  font-family: var(--Font-family);
+  font-size: var(--Font-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 520px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card h1 {
+  color: var(--Dark-blue);
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card p {
+  color: var(--Desaturated-blue);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.plan {
+  background-color: var(--Pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 12px;
+}
+
+.plan .price img {
+  width: 40px;
+  height: 40px;
+}
+
+.plan .price img:hover {
+  cursor: pointer;
+}
+
+.plan .price {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  align-items: flex-start;
+}
+
+.text h3 {
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+
+.text p {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.plan a {
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+}
+
+.plan a:hover {
+  color: var(--Bright-blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: var(--Bright-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: var(--Desaturated-blue);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.card a {
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+}
+
+.card a:hover {
+  color: var(--Bright-blue);
+  text-decoration: none;
+  cursor: pointer;
+}
